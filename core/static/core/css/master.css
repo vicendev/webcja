@@ -1,0 +1,253 @@
+.imgs-slider-home{
+    width: 100%;
+    height:36vw;
+    object-fit: cover;
+  }
+
+  .imgs-slider-offers{
+    width: 100%;
+    height:40vw;
+    object-fit: cover;
+  }
+
+  .imgs-works{
+    width: 100%;
+    height: 18vw;
+    object-fit: cover;
+  }
+
+  .imgs-index{
+    width: 100%;
+    height: 37vw;
+    object-fit: cover;
+  }
+
+  .works-title{
+    color: white;
+    font-size: 2.5rem;
+    padding-top:1rem;
+  }
+
+  .imgs-works_first-col{
+    width: 100%;
+    height: 18vw;
+    object-fit: cover;
+  }
+
+  .imgs-header{
+    height: 340px;
+  }
+
+  .navbar-nav {
+    font-size: 1.2rem;
+    font-family:fantasy;
+    }
+
+  #mainNav {
+    background-color: rgba(15, 30, 47, 0.9);
+    font-family: 'Raleway';
+  }
+  
+  .carousel-index{
+    border: 10px solid;
+    border-image: url('/static/core/img/bg.jpg') 30;
+  }
+
+  .header{
+      background-image: url('/static/core/img/bg.jpg');
+  }
+
+  .icon-works{
+      height: 60px;
+  }
+
+  .link-works{
+      color: white;
+      font-size: small;
+  }
+
+  .works-choice {
+    background-color: #e68c17;
+  box-shadow: 0 5px 0 #e66617;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.works-choice:hover {
+  background-color: #e69317;
+  cursor: pointer;
+}
+
+.block-work{
+  display:none;
+}
+
+.works-choice:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+  .font-weight-light {
+    font-weight: 100 !important;
+  }
+  
+  .mbtm{
+    padding-top: 5rem;
+  }
+  
+  .mbt{
+    padding-top: 2rem;
+  }
+  
+  .mbt1{
+    padding-top: 1.25rem;
+  }
+  
+  a.link{
+    color: #df902a;
+  }
+  
+  a.link:hover{
+    text-decoration: none;
+    color: #e6a756 !important;
+  }
+
+  footer{
+      background-color: #e68c17;
+  }
+
+  body{
+    background-color: #2a67bd;
+  }
+
+h1{
+    color: white;
+    font-size:2.1rem;
+    font-family: 'Black Ops One', cursive;
+    text-shadow: 5px 5px #000000;
+}
+
+#title-index{
+  color: white;
+  font-size:2.5rem;
+  font-family: 'Faster One', cursive;
+  text-shadow: 5px 5px #000000;
+}
+
+h2{
+  color: white;
+  font-size:2.5rem;
+  font-family: 'Faster One', cursive;
+  text-shadow: 5px 5px #000000;
+}
+
+h4{
+  color: white;
+  font-family: 'Black Ops One', cursive;
+  text-shadow: 3px 3px #000000;
+}
+
+u{
+  color:white;
+}
+
+.about-fonts{
+  color: white;
+  font-size:1.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  h1{
+    color: white;
+    font-size:1.1rem;
+  }
+
+  h2{
+    color: white;
+    font-size:2.1rem;
+  }
+  
+  .imgs-header{
+    height: 350px;
+  }
+
+  .imgs-slider-home{
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+  }
+
+  .imgs-slider-offers{
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+  }
+
+  .link-works{
+    color: white;
+    font-size: medium;
+  }
+
+  .icon-works{
+    height: 60px;
+  }
+
+  .imgs-works{
+    width: 100%;
+    height: 80vw;
+    object-fit: cover;
+  }
+
+  .imgs-works_first-col{
+    width: 100%;
+    height: 100vw;
+    object-fit: cover;
+    margin-top: 1.6rem;
+  }
+
+  .no-margin_top{
+    margin-top:0 !important;
+  }
+
+  .imgs-works_first-no_margin{
+    width: 100%;
+    height: 100vw;
+    object-fit: cover;
+  }
+
+  .works-title{
+    color: white;
+    font-size: 1.5rem;
+    padding-top:1rem;
+  }
+
+  .works-choice {
+    background-color: #e68c17;
+  box-shadow: 0 5px 0 #e66617;
+  color: white;
+  padding: 0.8em 1.3em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.works-choice:hover {
+  background-color: #e69317;
+  cursor: pointer;
+}
+
+.works-choice:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.about-fonts{
+  color: white;
+  font-size:1rem;
+}
+}

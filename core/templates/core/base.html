@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Somos una empresa constructora con 30 años de servicio, nos ubicamos en la zona de Valparaíso, V Región Chile y ofrecemos lo mejor de nosotros 🔨, con tal de que nuestra clientela se sienta satisfecha con el resultado de nuestra labor, acá puedes contactar con nosotros y preguntar sobre algún trabajo que necesites, ya sea de construcción, transformación, reparación y demolición. 👷 para cualquier otro servicio es libre de consultar, ¡Bienvenido! ">
+    <meta name="og:title" property="og:title" content="Construcciones José Aranda">
+    <meta name="og:description" content="Consulte por visitas a terreno, para construcciones, transformaciones, reparaciones y demoliciones, toda la información en la pagina web 🔨">
+    <meta name="og:image" content="{% static 'core/img/og-image.png'%}">
+    <title>{% block title %}{% endblock %}</title>
+    
+
+    <!-- favicon -->
+    <link rel="icon" href="{% static 'core/img/header.png' %}">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Faster+One&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'core/vendor/mdb/css/mdb.min.css' %}">
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="{% static 'core/vendor/lightbox/css/lightbox.css' %}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}">
+    <!-- Jquery UI -->
+    <link rel="stylesheet" href="{% static 'core/vendor/jquery-ui/css/jquery-ui.min.css' %}">
+    <!--VIDEO CSS -->
+    <link href="https://vjs.zencdn.net/7.6.5/video-js.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'core/css/master.css' %}">
+
+</head>
+<body>
+    
+    {% block header %}
+    {% endblock %}
+
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" id="mainNav" style="background-color: #e68c17; opacity: 0.94;">
+        <a href="#" class="navbar-brand">
+            <!--<img src="{% static 'core/img/logo.svg' %}" height="28" alt="CoolBrand">-->
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="{% url 'home' %}" class="nav-item nav-link {% if request.path == '/' %}active{% endif %}">Inicio</a>
+                <a href="{% url 'works' %}" class="nav-item nav-link {% if request.path == '/trabajos/' %}active{% endif %}">Trabajos</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="{% url 'contact' %}" class="nav-item nav-link {% if request.path == '/contacto/' %}active{% endif %}">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    
+    {% block content %}{% endblock %}
+
+    <footer class="text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0">
+                <a href="https://www.instagram.com/construcciones.ja/" target="__blank" class="link">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=56993641634&text=Hola!%20estoy%20interesado%20en%20un%20servicio" class="link">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-whatsapp fa-stack-1x fa-inverse wsp-link">
+                    </i>
+                </span>
+                </a>
+                <p>+56 9 9364 1634 ||
+                +56 9 8654 8754</p>
+            </p>
+            <p class="m-0 mbt1">&copy; Construcciones José Aranda. || <i>V región Valparaíso, Chile</i></p>
+
+            <p>Powered by SDT &reg;</p>
+    
+        </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="{% static 'core/vendor/jquery/jquery.min.js' '%}"></script>
+    <!-- Jquery IU -->
+    <script src="{% static 'core/vendor/jquery-ui/js/jquery-ui.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- MDB -->
+    <script src="{% static 'core/vendor/mdb/js/mdb.min.js' %}"></script>
+    <!-- Lightbox -->
+    <script src="{% static 'core/vendor/lightbox/js/lightbox.js' %}"></script>
+    <!-- VIDEO JS -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src='https://vjs.zencdn.net/7.6.5/video.js'></script>
+    <!-- JS -->
+    <script src="{% static 'core/js/master.js' %}"></script>    
+</body>
+</html>

@@ -1,0 +1,272 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Construcciones Jose Aranda V Region - Galeria de Nuestros Trabajos{% endblock %}
+
+{% block content %}
+
+    <div class="jumbotron header text-center">
+        <h1 class="display-4 pt-5">TRABAJOS</h1>
+        <h4>hacer click en una figura para ver galeria</h4>
+    </div>
+
+    <div class="container">
+        <div class="row link-works">
+            <div class="col-lg-3 col-md-6">
+                <a class="works-choice" id="idConstruccion"><img class="icon-works" src="{% static 'core/img/works/construccion.png' %}" alt="construccion"> • Construcción</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a class="works-choice" id="idTransformacion"><img class="icon-works" src="{% static 'core/img/works/transformacion.png' %}" alt="transformacion"> • Transformación</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a class="works-choice" id="idReparacion"><img class="icon-works" src="{% static 'core/img/works/reparacion.png' %}" alt="reparacion"> • Reparación</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a class="works-choice" id="idDemolicion"><img class="icon-works" src="{% static 'core/img/works/demolicion.png' %}" alt="demolicion"> • Demolición</a> 
+            </div>
+        </div>
+        <div id="scroll_point"></div>
+        <hr><hr>
+    </div>
+    <div id="scroll_point"></div>
+
+    <div id="idDivConstrucion" class="block-work">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mb-5">
+                        <h1 class="works-title">Trabajos en Construciones</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <a href="{% static 'core/img/works/gallery/cons/c_01.jpeg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works_first-col no-margin_top" src="{% static 'core/img/works/gallery/cons/c_01.jpeg' %}" alt="construccion01">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <a href="{% static 'core/img/works/gallery/cons/c_02.jpeg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works_first-col" src="{% static 'core/img/works/gallery/cons/c_02.jpeg' %}" alt="construccion02">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <a href="{% static 'core/img/works/gallery/cons/c_03.jpeg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works_first-col" src="{% static 'core/img/works/gallery/cons/c_03.jpeg' %}" alt="construccion03">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <a href="{% static 'core/img/works/gallery/cons/c_04.jpeg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works_first-col" src="{% static 'core/img/works/gallery/cons/c_04.jpeg' %}" alt="construccion04">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_05.jpeg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_05.jpeg' %}" alt="construccion05">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_06.jpeg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_06.jpeg' %}" alt="construccion06">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_07.jpeg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_07.jpeg' %}" alt="construccion07">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_08.jpeg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_08.jpeg' %}" alt="construccion08">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_09.jpg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_09.jpg' %}" alt="construccion09">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_10.jpg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_10.jpg' %}" alt="construccion10">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_11.jpg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_11.jpg' %}" alt="construccion11">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_12.jpg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_12.jpg' %}" alt="construccion12">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_13.jpg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_13.jpg' %}" alt="construccion13">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_14.jpg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_14.jpg' %}" alt="construccion14">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_15.jpg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_15.jpg' %}" alt="construccion15">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4">
+                    <a href="{% static 'core/img/works/gallery/cons/c_16.jpg' %}" data-lightbox="gallery-cons">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/cons/c_16.jpg' %}" alt="construccion16">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="idDivTransformacion" class="block-work">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mb-5">
+                        <h1 class="works-title">Trabajos en Transformaciones</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <a href="{% static 'core/img/works/gallery/tran/t_01.jpeg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works_first-col no-margin_top" src="{% static 'core/img/works/gallery/tran/t_01.jpeg' %}" alt="transformacion01">
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="{% static 'core/img/works/gallery/tran/t_02.jpeg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works_first-col" src="{% static 'core/img/works/gallery/tran/t_02.jpeg' %}" alt="transformacion02">
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="{% static 'core/img/works/gallery/tran/t_03.jpeg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works_first-col" src="{% static 'core/img/works/gallery/tran/t_03.jpeg' %}" alt="transformacion03">
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="{% static 'core/img/works/gallery/tran/t_04.jpeg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works_first-col" src="{% static 'core/img/works/gallery/tran/t_04.jpeg' %}" alt="transformacion04">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/tran/t_05.jpeg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/tran/t_05.jpeg' %}" alt="transformacion05">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/tran/t_06.jpeg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/tran/t_06.jpeg' %}" alt="transformacion06">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/tran/t_07.jpeg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/tran/t_07.jpeg' %}" alt="transformacion07">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/tran/t_08.jpeg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/tran/t_08.jpeg' %}" alt="transformacion08">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/tran/t_09.jpeg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/tran/t_09.jpeg' %}" alt="transformacion09">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/tran/t_10.jpeg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/tran/t_10.jpeg' %}" alt="transformacion10">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/tran/t_11.jpeg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/tran/t_11.jpeg' %}" alt="transformacion11">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/tran/t_12.jpg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/tran/t_12.jpg' %}" alt="transformacion12">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/tran/t_13.jpg' %}" data-lightbox="gallery-trans">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/tran/t_13.jpg' %}" alt="transformacion13">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="idDivReparacion" class="block-work">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mb-5">
+                        <h1 class="works-title">Trabajos en Reparaciones</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <a href="{% static 'core/img/works/gallery/repa/r_01.jpeg' %}" data-lightbox="gallery-repar">
+                        <img class="img-thumbnail imgs-works_first-col no-margin_top" src="{% static 'core/img/works/gallery/repa/r_01.jpeg' %}" alt="reparacion01">
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="{% static 'core/img/works/gallery/repa/r_02.jpeg' %}" data-lightbox="gallery-repar">
+                        <img class="img-thumbnail imgs-works_first-col" src="{% static 'core/img/works/gallery/repa/r_02.jpeg' %}" alt="reparacion02">
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="{% static 'core/img/works/gallery/repa/r_03.jpeg' %}" data-lightbox="gallery-repar">
+                        <img class="img-thumbnail imgs-works_first-col" src="{% static 'core/img/works/gallery/repa/r_03.jpeg' %}" alt="reparacion03">
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="{% static 'core/img/works/gallery/repa/r_04.jpg' %}" data-lightbox="gallery-repar">
+                        <img class="img-thumbnail imgs-works_first-col" src="{% static 'core/img/works/gallery/repa/r_04.jpg' %}" alt="reparacion04">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/repa/r_05.jpg' %}" data-lightbox="gallery-repar">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/repa/r_05.jpg' %}" alt="reparacion05">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/repa/r_06.jpg' %}" data-lightbox="gallery-repar">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/repa/r_06.jpg' %}" alt="reparacion06">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/repa/r_07.jpg' %}" data-lightbox="gallery-repar">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/repa/r_07.jpg' %}" alt="reparacion07">
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-4">
+                    <a href="{% static 'core/img/works/gallery/repa/r_08.jpg' %}" data-lightbox="gallery-repar">
+                        <img class="img-thumbnail imgs-works" src="{% static 'core/img/works/gallery/repa/r_08.jpg' %}" alt="reparacion08">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="idDivDemolicion" class="block-work">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mb-5">
+                        <h1 class="works-title">Trabajos en Demoliciones</h1>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+                        <video class='video-js embed-responsive-item' controls preload='auto' data-setup='{}'>
+                            <source src="{% static 'core/img/works/gallery/demo/d_01.mp4' %}" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
